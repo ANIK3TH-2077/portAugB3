@@ -1,0 +1,271 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 20px;
+}
+#conainer{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 100px;
+    
+}
+.logo{
+    width: 120px;
+    /* border: #fb9529; */
+    border-radius: 50%;
+}
+.list-items{
+    list-style: none;
+    display: inline;
+    margin: 0px 20px;
+}
+.links{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+.links:hover{
+    color: rgb(187, 33, 61);
+    text-decoration: underline;
+}
+.homecon{
+    margin: 13% 0px 0px 8%;
+}
+#uname{
+    font-size: 50px;
+margin-bottom: 20px;
+font-family: "Trade Winds", system-ui;
+}
+#iname{
+    font-family: "Trade Winds", system-ui;
+    font-size: 50px;
+    color: #fb9529
+}
+#udetail{
+    line-height: 1.2;
+    font-family: "Odibee Sans", sans-serif;
+    font-size: 25px;
+}
+#dwnld{
+    text-decoration: none;
+    background-color: black;
+    color: azure;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 30px;
+}
+#dwnld:hover{
+    color: #fb9529;
+}
+.homeimg{
+    width: 40%;
+    height: 75%;
+    position: absolute;
+    right: 30px;
+    bottom: 0px;
+}
+.grp1{
+    position: absolute;
+    height: 100%;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+
+}
+.homeimg:hover #shape{
+    bottom:60px;
+}
+.homeimg:hover #billy{
+   left: 30%;
+}
+#about{
+    margin: 15% 8% 0px 8%;
+}
+.sechead{
+    text-align: center;
+}
+.mainhead{
+    font-size: 40px;
+    font-family: "Protest Guerrilla", system-ui;
+    
+}
+.subhead{
+    font-size: 25px;
+    color: rgb(7, 166, 55);
+    font-family: "Odibee Sans", system-ui;
+}
+.abtbody{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 50px;
+    align-items: center;
+}
+.abtcont{
+    font-size: 30px;
+    text-align: justify;
+}
+.info{
+    margin-top: 1.3rem;
+}
+.infobox{
+    margin-bottom: 10px;
+}
+.infobox>span{
+    margin-left: 10px;
+    font-family: "Odibee Sans", system-ui;
+}
+p{
+    font-family: "Odibee Sans", system-ui;
+    font-size: 25px;
+}
+.skhead{
+    text-align: center;
+}
+#skill{
+    margin:8% 8% 0px 8%;
+}
+.skillcont{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 2rem;
+    margin-top: 20px;
+    
+}
+.bars{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 1rem 0px;
+    
+
+}
+.skillimg{
+    margin-left: 250px;
+}
+.barhead, .barpercent{
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+.basebar{
+    width: 100%;
+    height: 0.5rem;
+    background-color: black;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0px;
+
+}
+.htmlbar{
+    background-color: #fb9529;
+    width: 89%;
+}
+.cssbar{
+    background-color: #fb9529;
+    width: 83%;
+}
+.jsbar{
+    background-color: #fb9529;
+    width: 71%;
+}
+.reactbar{
+    background-color: #fb9529;
+    width: 79%;
+}
+#contact{
+    margin:8% 8% 0px 8%;
+}
+.iconcol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    
+}
+.icon{
+    width: 50px;
+    height: 50px;
+    /* border: solid; */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 0px 10px;
+}
+.brands{
+    color: black;
+    font-size: 1.5rem;
+}
+.icon:hover{
+    background-image: linear-gradient(to bottom right,#EE204D,#fb9529, #fdef00);
+    
+}
+.icon:hover .brands{
+    color: azure;
+    transition: .7s;
+    /* animation */
+    animation: rotate 3s;
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(90deg);
+    }
+    20%{
+        transform: rotate(-90deg);
+    }
+    40%{
+        transform: rotate(45deg);
+    }
+    60%{
+        transform: rotate(-45deg);
+    }
+    80%{
+        transform: rotate(20deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+footer{
+    margin: 8% 0px 0px 0px;
+    
+}
+#copyright{
+    text-align: center;
+    font-family: "Bebas Neue", system-ui;
+    font-size:  large;
+}
+.up{
+    float: right;
+    margin-top: -35px;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* ::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: aliceblue;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #fb9529;
+    border-radius: 10px;
+    height: 1px;
+} */
+
